@@ -10,7 +10,7 @@ export const IpForm = () => {
         event.preventDefault()
         // @ts-ignore
         const ip = `${event?.currentTarget?.querySelector('#input')?.value}`
-        if (ip) router.push(`/geolocalization/${ip}`)
+        if (ip) router.push(`/geolocation/${ip}`)
     }
 
     return (
