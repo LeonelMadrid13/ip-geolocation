@@ -35,7 +35,7 @@ const GeolocationPage = (
                 // set loading to false after everything has completed.
                 setIsLoading(false);
             });
-    }, []);
+    }, [OPTIONS, params.ip]);
 
     return (
         <div className="flex justify-center h-screen bg-gray-950">
