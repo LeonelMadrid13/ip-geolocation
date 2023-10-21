@@ -10,13 +10,13 @@ const GeolocationPage = (
     const [data, setData] = useState(null)
     const [error, setError] = useState("");
 
-    const OPTIONS = {
-        method: 'GET',
-    };
-
+    
     useEffect(() => {
         // set loading to true before calling fetch
         setIsLoading(true);
+        const OPTIONS = {
+            method: 'GET',
+        };
         fetch(`https://ipwho.is/${params.ip}`, OPTIONS)
             .then(async (res) => {
                 // set the data if the response is successful
@@ -35,7 +35,7 @@ const GeolocationPage = (
                 // set loading to false after everything has completed.
                 setIsLoading(false);
             });
-    }, [OPTIONS, params.ip]);
+    }, [params.ip]);
 
     return (
         <div className="flex justify-center h-screen bg-gray-950">
