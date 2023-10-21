@@ -42,7 +42,7 @@ const GeolocationPage = (
             <div className="p-5">
                 <IpForm />
                 <div className="mt-5">
-                    <div className="bg-gray-900 p-1 text-gray-400 max-h-[800px] overflow-auto overflow-x-hidden">
+                    <div className="bg-gray-900 p-1 text-gray-400 max-h-[700px] overflow-auto overflow-x-hidden">
                         <pre>
                             {isLoading ? "loading..." : error ? "Error " : JSON.stringify(data, null, 2)}
                         </pre>
